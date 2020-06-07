@@ -2,7 +2,14 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "babel": {
+    "presets": [  "jsx-control-statements" ],
+    "plugins": [  ]
+  },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react": "^6.24.1",
     "cra-template": "1.0.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -26,5 +33,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-jsx-control-statements": "^4.1.0",
+    "jsx-control-statements": "^3.2.8"
   }
 }
