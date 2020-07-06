@@ -1,0 +1,53 @@
+/*  */
+
+
+.wrapp {
+opacity: 0.7;   
+height:300px;    
+background-color: #0e0c0c;         
+} 
+       
+#hero_row {
+    /* margin: 0px auto !important; */
+    height: 300px;
+    color: white;
+}
+
+#hero-forms {
+    opacity: 1;
+}
+
+#hero-forms input[type="text"] {
+    border:2px;
+    border-radius: 2em;
+}
+
+#hero-forms button {
+    border:2px;
+    border-radius: 2em;
+}
+#s_result{
+    height:50px;
+    width:10px;
+    position:absolute;
+    top:0px;
+    /* bottom:10px; */
+    text-align: left;
+}
+@media screen and (max-width:600px) {
+
+    #hero-forms h3 {
+        font-size: 1em;
+    }
+
+    #hero-forms input[type="text"] {
+        width: 50%;
+    }
+    #hero-forms .btn {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+
+    
+    
+}
