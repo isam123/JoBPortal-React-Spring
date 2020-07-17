@@ -6,9 +6,13 @@ const SearchRecommend = (props) => {
     // globals
     let query = props.queryString;
     let changeWord = props.setWord;
-    let regEx = new RegExp('^['+query+']{1,}','i');
+    let regEx = new RegExp('^'+query+'+','i');
     let filterdResult=[];
-    const Values = ["Fron-end","Backend Developer","Coursera engineer","Agile analyst"];
+    let setVal = props.setValue;
+    let diplay = "block";
+    const [display,setDisplay] = useState("block");
+    const Values = ["Fron-end","Backend Developer",
+    "Coursera engineer","Agile analyst","Devops Engineer","Firebase Developer"];
     //states
     
 
@@ -19,22 +23,18 @@ const SearchRecommend = (props) => {
             return regEx.test(item);
          
         });
-    if(filterdResult.length ===0) filterdResult.push("Search not found")
+    if(filterdResult.length ===0) {diplay = "none"}
      
    // renders
         return (
-
-          <div className="" style={{height:"50px",width:"fit-content"}}>
-                <ul className="list-unstyled text-left white" style={{padding:"10px"}}>
+          <ul className={diplay}>
                     
                     {
-                 filterdResult.map((item , key) =><li className="black-text" key={key}>{item}</li>)
+                 filterdResult.map((item , key) =><li onClick ={setVal}  key={key}>{item}</li>)
                    }
 
                 </ul>
-                
-                
-            </div>
+         
         )
     
 }

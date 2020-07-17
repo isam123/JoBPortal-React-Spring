@@ -19,21 +19,48 @@ background-color: #0e0c0c;
 
 #hero-forms input[type="text"] {
     border:2px;
-    border-radius: 2em;
+    /* border-radius: 2em; */
 }
 
 #hero-forms button {
     border:2px;
     border-radius: 2em;
 }
-#s_result{
-    height:50px;
-    width:10px;
-    position:absolute;
-    top:0px;
-    /* bottom:10px; */
-    text-align: left;
+.Autocomplete{
+
+     width: 100%;
+     border :1px grey;
+     /* text-align: center; */
 }
+
+.Autocomplete input {
+
+    width: 100%;
+    border:none;
+    color:black;
+}
+.Autocomplete ul {
+        width: 72.4%;
+    border-style: ridge;
+    /* float: left; */
+    list-style: none;
+    position: absolute;
+    top: 5.71em;
+    text-align: left;
+    border: 2px;
+    /* margin-left: 2%; */
+    padding: 1%;
+    background-color: white;
+    margin-top: 1px;
+}
+
+.Autocomplete ul li {
+    
+    color: black;
+    padding: 3px;
+}
+
+
 @media screen and (max-width:600px) {
 
     #hero-forms h3 {
